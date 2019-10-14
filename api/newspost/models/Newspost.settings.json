@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "newsposts",
+  "info": {
+    "name": "newspost",
+    "description": "the news post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "newscategory": {
+      "model": "newscategory"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "authors": {
+      "collection": "authors",
+      "dominant": true,
+      "via": "newsposts"
+    },
+    "viewerhistories": {
+      "collection": "viewerhistory",
+      "via": "newspost"
+    }
+  }
+}

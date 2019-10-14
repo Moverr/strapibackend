@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "viewerhistories",
+  "info": {
+    "name": "viewerhistory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "newspost": {
+      "model": "newspost",
+      "via": "viewerhistories"
+    },
+    "viewerId": {
+      "type": "string"
+    }
+  }
+}

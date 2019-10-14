@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "socialmedialinks",
+  "info": {
+    "name": "socialmedialink",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "socialmediaUrl": {
+      "type": "string"
+    },
+    "author": {
+      "model": "authors",
+      "via": "socialmedialinks"
+    },
+    "socialmediasite": {
+      "model": "socialmediasite"
+    }
+  }
+}

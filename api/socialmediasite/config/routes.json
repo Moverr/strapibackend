@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/socialmediasites",
+      "handler": "Socialmediasite.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/socialmediasites/count",
+      "handler": "Socialmediasite.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/socialmediasites/:id",
+      "handler": "Socialmediasite.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/socialmediasites",
+      "handler": "Socialmediasite.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/socialmediasites/:id",
+      "handler": "Socialmediasite.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/socialmediasites/:id",
+      "handler": "Socialmediasite.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

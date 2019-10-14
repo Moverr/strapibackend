@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/newscategories",
+      "handler": "Newscategory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newscategories/count",
+      "handler": "Newscategory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newscategories/:id",
+      "handler": "Newscategory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/newscategories",
+      "handler": "Newscategory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/newscategories/:id",
+      "handler": "Newscategory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/newscategories/:id",
+      "handler": "Newscategory.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

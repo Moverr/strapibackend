@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "socialmediasites",
+  "info": {
+    "name": "socialmediasite",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "sitename": {
+      "type": "string"
+    }
+  }
+}

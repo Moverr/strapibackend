@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "newscategories",
+  "info": {
+    "name": "newscategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "category": {
+      "type": "string"
+    }
+  }
+}

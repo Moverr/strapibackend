@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "authors",
+  "info": {
+    "name": "authors",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "newsposts": {
+      "collection": "newspost",
+      "via": "authors"
+    },
+    "socialmedialinks": {
+      "collection": "socialmedialink",
+      "via": "author"
+    }
+  }
+}
